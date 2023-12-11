@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(image/bg.jpg);
+  height: 650px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+
+.main .box {
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  opacity: 0.75;
+  top: 0;
+  background-color: black;
+}
+nav {
+  justify-content: space-between;
+  height: 100px;
+  margin: auto;
+  max-width: 75%;
+  display: flex;
+  align-items: center;
+}
+nav img {
+  width: 145px;
+  color: red;
+  position: relative;
+  /* stay in upper level than other  */
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.mytext {
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% - 100px);
+  align-items: center;
+  align-content: center ;
+  justify-content: center;
+  color: white;
+  position: relative;
+  padding: 0 30px;
+  gap: 18px;
+}
+/* immediate first child of mytext so mytext>  */
+.mytext > :nth-child(1) {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.mytext > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.mytext > :nth-child(3) {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.seperate {
+  height: 7px;
+  background-color: rgb(52, 25, 25);
+}
+.btn {
+  font-weight: bold;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  font-size: 22px;
+  padding: 3px 20px;
+  border-radius: 4px;
+}
+.text-btn {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  align-content: center;
+
+}
+
+
+.main input {
+  background-color: rgba(35, 35, 38, 0.7);
+  font-size: 14px;
+  padding: 8px 70px;
+  border-radius: 4px;
+  font-weight: bolder;
+  color: white;
+  border: 1px solid rgba(240, 240, 240, 0.5);
+  box-sizing: border-box;
+}
+section {
+  color: white;
+  padding: 50px 12%;
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text-col h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-col p {
+  font-size: 24px;
+}
+.text-col {
+  width: 50%;
+}
+.img-col {
+  width: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.img-col img {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.img-col video {
+  /* 
+    height:auto;
+    left:40px;
+    right:0;
+    width:100%;
+    top:46px; */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  object-fit: cover;
+  width: 95%;
+  height: 95%;
+}
+
+.second .text-col {
+  z-index: 20;
+}
+.faqbox {
+  color: white;
+}
+.faqbox h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background-color: rgb(48, 47, 47);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 25px auto;
+  cursor: pointer;
+}
+.faq:hover {
+  background-color: rgb(79, 79, 79);
+}
+/* svg icon ko color reverse/opposite fill  */
+.faq svg {
+  filter: invert(1);
+}
+
+.footer {
+  color: white;
+  padding: 50px 15% 10px;
+}
+.footer h2 a {
+  color: white;
+  /* remove underline of link */
+  text-decoration: none;
+}
+.footer .row {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.footer .col {
+  width: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer .col a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.ebox {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.ebox-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin: 25px auto;
+}
+.inbox {
+  margin: auto;
+}
+.inbox .btn-red {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  margin: 15px auto;
+}
+
+.inbox input {
+  background-color: rgba(35, 35, 38, 0.7);
+  padding: 8px 90px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bolder;
+  color:white;
+  box-sizing: border-box;
+}
+
+.lang-btn img {
+  margin-top: auto;
+  width: 18px;
+  color: white;
+  
+}
+.lang-btn {
+  align-items: center;
+  align-content: center;
+  padding: 2px 5px;
+  background-color:#232326;
+  opacity: 0.7;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+}
+
+.cpyrt {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 748px) {
+  section .row {
+    flex-direction: column;
+  }
+  .ebox {
+    flex-direction: column;
+  }
+  .footer .col {
+    width: 50%;
+    flex-grow: 1;
+  }
+  .text-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .faqbox h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .faq {
+    font-size: 18px;
+  }
+  .mytext > :nth-child(1) {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .mytext > :nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .mytext > :nth-child(3) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .text-col p {
+    font-size: 18px;
+  }
+  .text-col h2 {
+    font-size: 32px;
+  }
+  .text-col {
+    width: 100%;
+    text-align: center;
+  }
+  .img-col {
+    width: 100%;
+  }
+}
+
+@media  screen and (max-width:400px) {
+
+  .inbox input {
+  width:80%;
+}
+.main input{
+  width:80%;
+
+}
+.mytext{
+  margin-top: 40px;
+}
+}
